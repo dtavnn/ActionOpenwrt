@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt BuilderByDebain202404
+name: OpenWrt Builder202404
 
 on:
   repository_dispatch:
