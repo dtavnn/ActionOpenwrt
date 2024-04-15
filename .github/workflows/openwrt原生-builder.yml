@@ -55,6 +55,8 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        export GO111MODULE=on
+        export GOPROXY=https://goproxy.io
 
     - name: Load custom feeds
       run: |
